@@ -62,4 +62,47 @@ print(list(set(cities)))
 ## OR 
 print(len(set(cities)))
 
+################################################# SET METHODS ##############################################
+
+#Add
+t = set{1 , 2 , 3}
+t.add(4)
+print(t)  
+t.add(3)
+print(t) 
+
+
+# REMOVE --- Throws Error if Info isn't in there
+t.remove(3)
+print(t)
+
+#Discard -- Removes, but doesn't throw Error
+t.discard(3)
+print(t)
+
+
+#Copy
+u = t.copy()
+print(u)
+
+#Clear
+t.clear()
+print(t)
+
+math_students = set{"Matt" , "James" , "Mark" , "Luke" , "John" , "Peter"}
+bio_students = set{"Barnabus" , "Luke" , "Paul" , "Matt" , "Peter" , "John-Mark"}
+
+##UNTION
+print(math_students | bio_students)
+
+##INTERSECTIONS
+print(math_students & bio_students) 
+
+
+######## SET COMPREHENSION ######
+v = {x**2 for x in range(10)}
+
+print(v) 
+
+
 
